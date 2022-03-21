@@ -17,10 +17,10 @@ def fizzbuzz(nummer: int) -> str:
 
     return resultat
 
-def hovud():
-    for tall in range(1, 22):
+def hovud(opptil):
+    for tall in range(1, opptil+1):
         fb = fizzbuzz(tall)
         print(tall, fb)
 
 if __name__ == "__main__":
-    hovud()
+    hovud(100)
