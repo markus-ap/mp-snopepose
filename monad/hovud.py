@@ -22,7 +22,7 @@ def hent_lønn(jobb: Jobb) -> int :
     return jobb.lønn
 
 def hovud():
-    markus = Person(namn="Markus", bursdag="1991-12-25", stilling=Jobb(tittel="Utvikler", lønn=710000))
+    markus = Person(namn="Markus", bursdag="1900-01-01", stilling=Jobb(tittel="Utvikler", lønn=1000000000))
     lønn = markus.bind(hent_jobb).bind(hent_lønn)
     print(lønn)
 
